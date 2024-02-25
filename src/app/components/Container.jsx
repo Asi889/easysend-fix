@@ -44,9 +44,9 @@ const Container = () => {
         setSocialSecurityNumber("")
         setMobile("")
         setEmail("")
-        setFundeNumber("222222")
+        setFundeNumber("")
         setFundName("")
-        setAcountNumber("33333")
+        setAcountNumber("")
         setFirstSelectedOption("")
         setSecondeSelectedOption("")
         setThirdSelectedOption("")
@@ -156,7 +156,7 @@ const Container = () => {
 
 
     return (
-        <div className="w-full h-screen px-20 flex justify-center bg-white py-4">
+        <div className="w-full h-full lg:h-screen px-20 flex justify-center bg-white py-4">
 
             <div className="w-full max-w-xl mx-auto">
                 <div className="flex flex-col h-full w-full max-w-md mx-auto">
@@ -206,11 +206,11 @@ const Container = () => {
                             <input type="text" className="border-b-[1px] border-gray-400 w-full" placeholder="Fund Name" value={fundName} onChange={(e) => setFundName(e.target.value)} />
                         </div>
                         <div>
-                            <input type="number" className="border-b-[1px] border-gray-400 w-full" placeholder="Account Number" valu={acountNumber} onChange={(e) => setAcountNumber(e.target.value)} />
+                            <input type="number" className="border-b-[1px] border-gray-400 w-full" placeholder="Account Number" value={acountNumber} onChange={(e) => setAcountNumber(e.target.value)} />
 
                         </div>
                         <div>
-                            <input type="number" className="border-b-[1px] border-gray-400 w-full" placeholder="Fund Number" valu={fundeNumber} onChange={(e) => setFundeNumber(e.target.value)} />
+                            <input type="number" className="border-b-[1px] border-gray-400 w-full" placeholder="Fund Number" value={fundeNumber} onChange={(e) => setFundeNumber(e.target.value)} />
 
                         </div>
 

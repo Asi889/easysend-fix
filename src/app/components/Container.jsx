@@ -157,9 +157,13 @@ const Container = () => {
 
     return (
         <div className="w-full h-full lg:h-screen px-20 flex justify-center bg-white py-4">
-
             <div className="w-full max-w-xl mx-auto">
-                <div className="flex flex-col h-full w-full max-w-md mx-auto">
+                <div className="text-center">
+                    <h1 className="text-lg font-bold">EasySend Task
+                    </h1>
+                    <h2 className="font-semibold">by: Asaf Marom</h2>
+                </div>
+                <div className="flex flex-col h-full w-full max-w-md mx-auto pt-4">
                     <div className="grid md:flex gap-x-2">
                         <div>
                             <input
